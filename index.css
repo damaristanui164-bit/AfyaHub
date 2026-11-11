@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8f9;
+    color: #183b46;
+}
+
+header {
+    background: #087e8b;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b9eeee;
+}
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(
+        110deg,
+        #087e8b,
+        #124c61
+    );
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: white;
+    color: #087e8b;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #087e8b;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #71858b;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #d4e0e3;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #087e8b;
+}
+
+button {
+    background: #087e8b;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #065f69;
+}
+
+.portal-box, .admin-box {
+    background: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+}
+
+.portal-box h3, .admin-box h3 {
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 25px 0;
+    border: 1px solid #e5edef;
+}
+
+footer {
+    background: #123d49;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 45px 5%;
+    }
+}
